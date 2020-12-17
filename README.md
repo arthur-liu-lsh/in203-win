@@ -20,7 +20,7 @@ En option vous pourrez créer un alias pour rendre la compilation plus rapide (p
 
 - Trouver le dossier d'installation de MinGW, normalement `C:\MinGW` ou bien `C:\Program Files\mingw-w64`. Le dossier dans lequel nous allons travailler est le sous-dossier contenant les dossiers `bin`, `include`, `lib`. Pour moi c'est  `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64`. Si vous avez la version 32 bits, c'est probablement juste `C:\MinGW`. Dans tous les cas, conservez précieusement le chemin vers ce dossier. Dans la suite du tutoriel, il sera indiqué par **dossier mingw préparé précédemment**?
 - Ouvrez le dossier dans lequel vous avez déposé le projet. Cela doit être le dossier dans lequel se trouve le `Makefile`. Il sera indiqué dans la suite du tutoriel par **dossier du projet**.
-- Télécharger ou cloner le git
+- Télécharger ou cloner ce git
 
 ## Installation de SDL et SDL_Image
 Attention à bien suivre les étapes suivantes, c'est très important.
