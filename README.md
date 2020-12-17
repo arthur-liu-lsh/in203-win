@@ -87,3 +87,7 @@ Une nouvelle fenêtre s'affiche, cliquer sur Nouveau et entrer le chemin vers le
 Cliquer sur OK pour valider toutes les fenêtres.
 
 Pour tester si cela a fonctionné, tapez `[alias] --version` dans l'invite de commandes.
+
+## Éventuels problèmes :
+
+Lors de la compilation, si il y a une erreur concernant memcpy, ajouter #include <cstring> dans parametres.cpp.
