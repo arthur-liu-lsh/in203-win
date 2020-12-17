@@ -65,6 +65,10 @@ Puis remplacer le chemin sur la deuxième ligne de la même façon vers votre pr
 Une fois que cela est fait, la compilation devrait pouvoir se faire correctement. Ouvrez un invite de commandes cmd.exe et allez dans le **dossier du projet**. Puis tapez la commande `mingw32-make all`.\
 Si tout fonctionne correctement, la compilation se fait sans erreur et vous pouvez lancer le programme `colonisation.exe` à partir de l'invite de commandes cmd.exe ou en double-cliquant dessus. L'animation doit s'afficher normalement, et des informations doivent apparaître dans le terminal.
 
+
+Lors de la compilation, si il y a une erreur concernant memcpy, ajouter `#include <cstring>` au début de parametres.cpp.
+
+
 ## (Optionnel) Création d'un alias pour mingw32-make
 
 Il peut être long d'écrire `mingw32-make all` à chaque fois que l'on veut compiler. Il est possible de créer un alias pour ne devoir taper seulement `make` au lieu de `mingw32-make`.
@@ -87,7 +91,3 @@ Une nouvelle fenêtre s'affiche, cliquer sur Nouveau et entrer le chemin vers le
 Cliquer sur OK pour valider toutes les fenêtres.
 
 Pour tester si cela a fonctionné, tapez `[alias] --version` dans l'invite de commandes.
-
-## Éventuels problèmes :
-
-Lors de la compilation, si il y a une erreur concernant memcpy, ajouter #include <cstring> dans parametres.cpp.
