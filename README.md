@@ -59,10 +59,10 @@ INCLUDE_PATHS = -I"C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\
 LIBRARY_PATHS = -L"C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\lib"
 ```
 
-Remplacer le chemin sur la première ligne par le chemin vers votre propre `\include` dans votre **dossier mingw préparé précédemment**. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\include` ou bien `C:\MinGW\include` par exemple).
+Remplacer le chemin sur la première ligne par le chemin vers votre propre `\include` dans votre **dossier mingw préparé précédemment**. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\include` ou bien `C:\MinGW\include` par exemple).\
 Puis remplacer le chemin sur la deuxième ligne de la même façon vers votre propre `\lib`. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\lib` ou bien `C:\MinGW\lib` par exemple).
 
-Une fois que cela est fait, la compilation devrait pouvoir se faire correctement. Ouvrez un invite de commandes cmd.exe et allez dans le **dossier du projet**. Puis tapez la commande `mingw32-make all`.
+Une fois que cela est fait, la compilation devrait pouvoir se faire correctement. Ouvrez un invite de commandes cmd.exe et allez dans le **dossier du projet**. Puis tapez la commande `mingw32-make all`.\
 Si tout fonctionne correctement, la compilation se fait sans erreur et vous pouvez lancer le programme `colonisation.exe` à partir de l'invite de commandes cmd.exe, avec l'animation qui s'affiche normalement.
 
 ## (Optionnel) Création d'un alias pour mingw32-make
@@ -83,6 +83,7 @@ Pour cela ouvrir le menu Windows (touche Windows) et taper `variables d'environn
 Si cela ne marche pas, taper Windows+R et écrire `control sysdm.cpl,,3`, appuyer sur OK, une fenêtre s'affiche, sélectionner Variables d'environnement en bas.
 
 Dans la fenêtre Variables d'environnement, sélectionner Path dans la partie du haut, puis cliquer sur le bouton modifier.
-Une nouvelle fenêtre s'affiche, cliquer sur Nouveau et entrer le chemin vers le dossier créé précédemment (par exemple `C:\Alias`). Cliquer sur OK pour valider toutes les fenêtres.
+Une nouvelle fenêtre s'affiche, cliquer sur Nouveau et entrer le chemin vers le dossier créé précédemment (par exemple `C:\Alias`).\
+Cliquer sur OK pour valider toutes les fenêtres.
 
 Pour tester si cela a fonctionné, tapez `[alias] --version` dans l'invite de commandes.
