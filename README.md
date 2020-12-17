@@ -4,7 +4,7 @@ Le tutoriel suivant vise à pouvoir travailler sur le projet d'IN203 sur Windows
 
 ## Explication
 
-En suivant ce tutoriel, vous allez installer les librairies graphiques SDL2 et SDL_Image, utiliser un Makefile modifié, et vous pourrez ainsi compiler le projet d'IN203 sur Windows.
+En suivant ce tutoriel, vous allez installer les librairies graphiques SDL2 et SDL_Image, utiliser un Makefile modifié, et vous pourrez ainsi compiler le projet d'IN203 sur Windows.\
 En option vous pourrez créer un alias pour rendre la compilation plus rapide (par exemple taper `make` au lieu de `mingw32-make`.
 
 ## Prérequis
