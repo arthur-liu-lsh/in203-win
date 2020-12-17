@@ -71,7 +71,7 @@ Lors de la compilation, si il y a une erreur concernant memcpy, ajouter `#includ
 
 ## (Optionnel) Création d'un alias pour mingw32-make
 
-Il peut être long d'écrire `mingw32-make all` à chaque fois que l'on veut compiler. Il est possible de créer un alias pour ne devoir taper seulement `make` au lieu de `mingw32-make`.
+Il peut être long d'écrire `mingw32-make all` à chaque fois que l'on veut compiler. Il est possible de créer un alias pour ne devoir taper que `make` au lieu de `mingw32-make` par exemple.
 
 Créer un dossier Alias où vous voulez. Par exemple `C:\Alias`. Conserver le chemin vers le dossier créé.
 
