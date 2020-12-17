@@ -29,19 +29,19 @@ Ouvrir le dossier d'installation de MinGW, et aller jusqu'au **dossier mingw pr�
 
 Ouvrir l'archive `SDL2-2.0.12.zip`
 - Si vous avez la version 64 bits de MinGW : 
-	- Copier les contenus de `x86_64-w64-mingw32` dans le **dossier mingw préparé précédemment**.
+	- Copier le contenu de `x86_64-w64-mingw32` dans le **dossier mingw préparé précédemment**.
 	- Dans l'archive, entrer dans `x86_64-w64-mingw32/bin` et copier `SDL2.dll` dans le **dossier du projet**. (il doit être dans le même dossier que Makefile)
 - Si vous avez la version 32 bits de MinGW : 
-	- Copier les contenus de `i686-w64-mingw32` dans le **dossier mingw préparé précédemment**.
+	- Copier le contenu de `i686-w64-mingw32` dans le **dossier mingw préparé précédemment**.
 	- Dans l'archive, entrer dans `i686-w64-mingw32/bin` et copier `SDL2.dll` dans le **dossier du projet**. (il doit être dans le même dossier que Makefile)
 
 
 Maintenant, ouvrir l'archive `SDL2_image-2.0.5.zip`.
 - Si vous avez la version 64 bits de MinGW : 
-	- Copier les contenus de `x86_64-w64-mingw32` dans le **dossier mingw préparé précédemment**.
+	- Copier le contenu de `x86_64-w64-mingw32` dans le **dossier mingw préparé précédemment**.
 	- Dans l'archive, entrer dans le dossier `x86_64-w64-mingw32/bin` et copier `SDL2_image.dll` `libjpeg-9.dll` et `zlib1.dll`,  dans le **dossier du projet**. (dans le même dossier que Makefile)
 - Si vous avez la version 32 bits de MinGW : 
-	- Copier les contenus de `i686-w64-mingw32` dans le **dossier mingw préparé précédemment**.
+	- Copier le contenu de `i686-w64-mingw32` dans le **dossier mingw préparé précédemment**.
 	- Dans l'archive, entrer dans le dossier `x86_64-w64-mingw32/bin` et copier `SDL2_image.dll` `libjpeg-9.dll` et `zlib1.dll`,  dans le **dossier du projet**. (dans le même dossier que Makefile)
 
 ## Compilation avec mingw32-make
