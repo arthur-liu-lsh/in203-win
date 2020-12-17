@@ -37,6 +37,12 @@ Ouvrir le dossier d'installation de MinGW, et aller jusqu'au **dossier mingw pr�
 	- Copier le contenu de `/mingw` dans le **dossier mingw préparé précédemment**.
 	- Copier le contenu de  `/projet` dans le **dossier du projet**.
 
+
+Tout cela permet de :
+1. Installer les librairies SDL2 et SDL_Image
+2. Ajouter les fichiers .dll qui permettront d'exécuter colonisation.exe
+3. Ajouter le Makefile modifié pour Windows et mingw32-make
+
 ## Compilation avec mingw32-make
 
 Se rendre dans le **dossier du projet**.
@@ -51,12 +57,14 @@ LIBRARY_PATHS = -L"C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\
 ```
 
 Remplacer le chemin sur la première ligne par le chemin vers votre propre `\include` dans votre **dossier mingw préparé précédemment**. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\include` ou bien `C:\MinGW\include` par exemple).\
+
 Puis remplacer le chemin sur la deuxième ligne de la même façon vers votre propre `\lib`. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\lib` ou bien `C:\MinGW\lib` par exemple).\
-Attention à bien garder le chemin entre guillemets `""`.
 
-Une fois que cela est fait, la compilation devrait pouvoir se faire correctement. Ouvrez un invite de commandes cmd.exe et allez dans le **dossier du projet**. Puis tapez la commande `mingw32-make all`.\
+Attention à bien garder le chemin entre guillemets `""` dans tous les cas.
+
+Une fois que cela est fait, la compilation devrait pouvoir se faire correctement. Ouvrez un invite de commandes cmd.exe et allez dans le **dossier du projet**. Puis tapez la commande `mingw32-make all` (il s'agit de la même commande même si MinGW est en 64 bits).\
+
 Si tout fonctionne correctement, la compilation se fait sans erreur et vous pouvez lancer le programme `colonisation.exe` à partir de l'invite de commandes cmd.exe ou en double-cliquant dessus. L'animation doit s'afficher normalement, et des informations doivent apparaître dans le terminal.
-
 
 Lors de la compilation, si il y a une erreur concernant memcpy, ajouter `#include <cstring>` au début de parametres.cpp.
 
