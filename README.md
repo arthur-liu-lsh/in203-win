@@ -18,13 +18,14 @@ En option vous pourrez créer un alias pour rendre la compilation plus rapide (p
 ## Préparation de l'installation
 - Vérifier si vous avez installé la version 64 bits ou 32 bits de MinGW. La ligne `Target :`de la commande `g++ -v` vous indiquera votre version : `mingw32` pour 32 bits et `x86_64-w64-mingw32` ou quelque chose de semblable pour 64 bits.
 
-- Trouver le dossier d'installation de MinGW, normalement `C:\MinGW` ou bien `C:\Program Files\mingw-w64`. Le dossier dans lequel nous allons travailler est le sous-dossier contenant les dossiers `bin`, `include`, `lib`. Pour moi c'est  `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64`. Si vous avez la version 32 bits, c'est probablement juste `C:\MinGW`. Dans tous les cas, conservez précieusement le chemin vers ce dossier. Dans la suite du tutoriel, il sera indiqué par **dossier mingw préparé précédemment**.
+- Trouver le dossier d'installation de MinGW, normalement `C:\MinGW` ou bien `C:\Program Files\mingw-w64`. Le dossier dans lequel nous allons travailler est le sous-dossier contenant les dossiers `bin`, `include`, `lib`. Pour moi c'est  `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64`.
+Si vous avez la version 32 bits, c'est probablement juste `C:\MinGW`. Dans tous les cas, conservez précieusement le chemin vers ce dossier. Dans la suite du tutoriel, il sera indiqué par **dossier mingw préparé précédemment**.
 - Ouvrez le dossier dans lequel vous avez déposé le projet. Cela doit être le dossier dans lequel se trouve le `Makefile`. Il sera indiqué dans la suite du tutoriel par **dossier du projet**.
 - Télécharger ou cloner ce git
 
 ## Installation de SDL et SDL_Image
 
-Ouvrir le dossier d'installation de MinGW, et aller jusqu'au **dossier mingw préparé précédemment** contenant les sous-dossiers `bin`, `include`, `lib`.
+Ouvrir le dossier d'installation de MinGW, et aller jusqu'au **dossier mingw préparé précédemment** (il doit contenir les sous-dossiers `bin`, `include`, `lib`).
 
 - Si vous avez la version 64 bits de MinGW : 
 	- Ouvrir l'archive `SDL 64 bits.zip`
@@ -50,7 +51,8 @@ LIBRARY_PATHS = -L"C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\
 ```
 
 Remplacer le chemin sur la première ligne par le chemin vers votre propre `\include` dans votre **dossier mingw préparé précédemment**. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\include` ou bien `C:\MinGW\include` par exemple).\
-Puis remplacer le chemin sur la deuxième ligne de la même façon vers votre propre `\lib`. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\lib` ou bien `C:\MinGW\lib` par exemple).
+Puis remplacer le chemin sur la deuxième ligne de la même façon vers votre propre `\lib`. (`C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\lib` ou bien `C:\MinGW\lib` par exemple).\
+Attention à bien garder le chemin entre guillemets `""`.
 
 Une fois que cela est fait, la compilation devrait pouvoir se faire correctement. Ouvrez un invite de commandes cmd.exe et allez dans le **dossier du projet**. Puis tapez la commande `mingw32-make all`.\
 Si tout fonctionne correctement, la compilation se fait sans erreur et vous pouvez lancer le programme `colonisation.exe` à partir de l'invite de commandes cmd.exe ou en double-cliquant dessus. L'animation doit s'afficher normalement, et des informations doivent apparaître dans le terminal.
