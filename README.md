@@ -83,6 +83,6 @@ Pour cela ouvrir le menu Windows (touche Windows) et taper `variables d'environn
 Si cela ne marche pas, taper Windows+R et écrire `control sysdm.cpl,,3`, appuyer sur OK, une fenêtre s'affiche, sélectionner Variables d'environnement en bas.
 
 Dans la fenêtre Variables d'environnement, sélectionner Path dans la partie du haut, puis cliquer sur le bouton modifier.
-Une nouvelle fenêtre s'affiche, cliquer sur Nouveau et entrer le chemin vers le dossier créé précédemment. Cliquer sur OK pour valider toutes les fenêtres.
+Une nouvelle fenêtre s'affiche, cliquer sur Nouveau et entrer le chemin vers le dossier créé précédemment (par exemple `C:\Alias`). Cliquer sur OK pour valider toutes les fenêtres.
 
 Pour tester si cela a fonctionné, tapez `[alias] --version` dans l'invite de commandes.
