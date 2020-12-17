@@ -18,7 +18,7 @@ En option vous pourrez créer un alias pour rendre la compilation plus rapide (p
 ## Préparation de l'installation
 - Vérifier si vous avez installé la version 64 bits ou 32 bits de MinGW. La ligne `Target :`de la commande `g++ -v` vous indiquera votre version : `mingw32` pour 32 bits et `x86_64-w64-mingw32` ou quelque chose de semblable pour 64 bits.
 
-- Trouver le dossier d'installation de MinGW, normalement `C:\MinGW` ou bien `C:\Program Files\mingw-w64`. Le dossier dans lequel nous allons travailler est le sous-dossier contenant les dossiers `bin`, `include`, `lib`. Pour moi c'est  `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64`. Si vous avez la version 32 bits, c'est probablement juste `C:\MinGW`. Dans tous les cas, conservez précieusement le chemin vers ce dossier. Dans la suite du tutoriel, il sera indiqué par **dossier mingw préparé précédemment**?
+- Trouver le dossier d'installation de MinGW, normalement `C:\MinGW` ou bien `C:\Program Files\mingw-w64`. Le dossier dans lequel nous allons travailler est le sous-dossier contenant les dossiers `bin`, `include`, `lib`. Pour moi c'est  `C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64`. Si vous avez la version 32 bits, c'est probablement juste `C:\MinGW`. Dans tous les cas, conservez précieusement le chemin vers ce dossier. Dans la suite du tutoriel, il sera indiqué par **dossier mingw préparé précédemment**.
 - Ouvrez le dossier dans lequel vous avez déposé le projet. Cela doit être le dossier dans lequel se trouve le `Makefile`. Il sera indiqué dans la suite du tutoriel par **dossier du projet**.
 - Télécharger ou cloner ce git
 
